@@ -1,60 +1,109 @@
-*{
-    margin:0;
-
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-}
-.container{
-
-    min-height:100vh;
-    background:linear-gradient(135deg,#153677,#4e085f);
-    padding:10px;
-
-}
-.todoapp{
-    background:#ffffff;
-    margin:100px auto 20px;
-    padding:40px 30px 70px;
-    border-radius:40px;
 
 
-}
-input{
-    border:none;
-    background:transparent;
-    padding:10px;
-    font-weight:14px;
 
-}
-button{
-    
-    padding:9px;
-    background:#ff5945;
-    color:#fff;
-    font-size:16px;
-    cursor:pointer;
-    border-radius:40px;
-
-
-}
-h1{
-    font-size: 40px;
-}
-
-li{
-    font-size: 40px;
-}
-.todoapp h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color:#002765;
+.buttons {
     display: flex;
-    align-items:center;
-    margin-bottom: 20px;
-    
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    height: 75px; 
+}
+
+.row button {
+    width: calc(25% - 1px); 
+    height: 100%;
+    border-radius: 0;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.2s all linear;
+}
+
+.row button:hover {
+    background-color: #e0e0e0;
+}
+
+.row button:active {
+    background-color: #eeb3b3;
+}
+
+#equal {
+    width: calc(50% - 1px); }
+
+#dot {
+    font-weight: 600;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px 8px 0 0;
+    background: white;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.4);
+ 
+}
+
+.result{
+    background-color: #413e3e;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    padding: 20px;
+    font-size: 20px;
 
 }
-img{
-    width: 30px;
-    margin-left:20px;
 
+.buttons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1px; 
 }
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    gap: 1px;
+}
+
+ .row button{
+    width: 75px;
+    height: 75px;
+    border-radius: 0 0 0 0;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    transition: 0.2s all linear; 
+} 
+
+.row button:hover{
+    background-color: #e0e0e0;
+}
+
+.row button:active{
+    background-color: #eeb3b3;
+}
+
+#equal {
+    width: calc(50% - 1px); }
+
+
+#dot{
+    font-weight: 600;
+}
+
+
